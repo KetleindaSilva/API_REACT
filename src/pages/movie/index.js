@@ -26,24 +26,32 @@ const Movie = () => {
 
     return (
         <div>
-            <nav>
-                <h1>Movie</h1>
-            </nav>
-            <img
-                className="img_movie"
-                src={`${imagePath}${movie.poster_path}`}
-                alt="{movie.title}"
-            />
-            <div className="container">
-                <h1>{movie.title}</h1>
-                <h3>Data de lançamento: {movie.release_date}</h3>
-                <div className="descricao">
-                    <h4>Descrição: </h4>
-                    <p className="movie-desc">{movie.overview}</p>
+            <header className="container-fluid">
+                <div className="row text-center text-white">
+                    <h2 className="col">Movie</h2>
+                    <button href="#" className="link_button col-2 me-3">Seja Bem-vindo</button>
                 </div>
-                <Link to="/">
-                    <button className="link_button">Voltar</button>
-                </Link>
+            </header>
+            <div className="body container align-self-start">
+                <div className="col-5">
+                    <img
+                        className="img_movie"
+                        src={`${imagePath}${movie.poster_path}`}
+                        alt="{movie.title}"
+                    />
+                </div>
+                <div className="col p-3">
+                    <h2 className="titulo">{movie.title}</h2>
+                    <h3 className="titulo">Data de lançamento:</h3>
+                    <p className="movie-desc"> {movie.release_date}</p>
+                    <div className="descricao">
+                        <h4 className="titulo">Descrição: </h4>
+                        <p className="movie-desc">{movie.overview}</p>
+                    </div>
+                    <Link to="/">
+                        <button className="link_button">Voltar</button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

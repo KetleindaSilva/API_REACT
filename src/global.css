@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(233, 24, 170);
+  color: rgb(10, 10, 10);
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }

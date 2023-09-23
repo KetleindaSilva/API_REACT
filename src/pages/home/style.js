@@ -1,20 +1,57 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 2rem;
-
-    h1 {
-        text-align: center;
-        margin: 4rem 0;
-    }
+   
+    header {
+    background-color: #ffdbf2; 
+    padding: 20px;
+  }
+  
+  header h2 {
+    color: #ff69b4; 
+  }
+  
+  header .form-control {
+    background-color: #ffdbf2;
+    border-color: #ff69b4;
+  }
+  
+  .btn2{
+    background-color: #ff69b4; 
+    border-color: #ff69b4; 
+  }
+  
+  .btn2:hover {
+    color: #ffdbf2; 
+  }
+  .btn1{
+    background-color: #fff; 
+    border-color: #ff69b4;
+    color:#ff69b4;
+  }
+  
+    
 `;
 
 export const MovieList = styled.ul`
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     column-gap: 3rem;
     row-gap: 4rem;
+
+    .card{
+        background-color: #ffdbf2; 
+        border: 1px solid #ff69b4;
+        padding:10px;
+        border-radius: 25px;
+        transition: transform 0.2s, box-shadow 0.2s; 
+    }
+    .card:hover {
+        transform: scale(1.05);  
+        box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2); 
+        cursor: pointer; 
+      }
 `;
 
 export const Movie = styled.li`
@@ -23,13 +60,16 @@ export const Movie = styled.li`
     align-items: center;
     justify-content: space-evenly;
     img {
-        width: 180px;
+        width: 160px;
         border-radius: 1rem;
         margin-bottom: 2rem;
     }
+    img:hover{
+        transform: scale(1.05);
+    }
     span {
         font-weight: bold;
-        font-size: 120%;
+        font-size: 100%;
         text-align: center;
     }
     a {

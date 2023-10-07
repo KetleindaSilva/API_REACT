@@ -90,6 +90,10 @@ h1 {
   color: #ff69b4; /* Cor dos subtítulos em rosa médio */
   font-size: 28px; /* Tamanho de fonte maior */
 }
+.titulo1 {
+  color: #fa037e; /* Cor dos subtítulos em rosa médio */
+  font-size: 32px; /* Tamanho de fonte maior */
+}
 p {
   text-indent: 30px;
   color:#ff73b9;

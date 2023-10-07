@@ -49,7 +49,7 @@ function Home() {
             <MovieList>
                 {movies.map((movie) => {
                     return (
-                        <div className="card col m-2" key={movie.id}>
+                        <div className="card col " key={movie.id}>
                             <Movie>
                                 <img
                                     src={`${imagePath}${movie.poster_path}`}

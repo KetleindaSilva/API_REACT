@@ -11,25 +11,24 @@ const Movie = () => {
     const KEY = process.env.REACT_APP_KEY;
     useEffect(() => {
         fetch(
-            `https://api.themoviedb.org/3/movie/popular?api_key=${KEY}&language=pt-BR`
+            `https://api.themoviedb.org/3/movie/${id}?api_key=${KEY}&language=pt-BR`
         )
             .then((response) => response.json())
             .then((data) => {
-                const res = data.results;
-                let filme = res.find((key) => {
-                    // eslint-disable-next-line
-                    return key.id == id;
-                });
-                setMovie(filme);
+                console.log(data);
+                if (data) {
+                    setMovie(data);
+                } else {
+                    console.error("No movie data found in the API response.");
+                }
             }); // eslint-disable-next-line
-    }, []);
+    }, []);
 
     return (
         <div>
             <header className="container-fluid">
                 <div className="row text-center text-white">
                     <h2 className="col">Movie</h2>
-                    <button href="#" className="link_button col-2 me-3">Seja Bem-vindo</button>
                 </div>
             </header>
             <div className="body container align-self-start">
@@ -41,7 +40,7 @@ const Movie = () => {
                     />
                 </div>
                 <div className="col p-3">
-                    <h2 className="titulo">{movie.title}</h2>
+                    <h2 className="titulo1">{movie.title}</h2>
                     <h3 className="titulo">Data de lançamento:</h3>
                     <p className="movie-desc"> {movie.release_date}</p>
                     <div className="descricao">

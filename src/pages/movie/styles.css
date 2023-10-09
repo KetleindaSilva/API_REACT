@@ -28,13 +28,13 @@ nav h1 {
   margin-bottom: 12vh;
 }
 header {
-  background-image: linear-gradient(135deg, #f4f4, #ffa8a8); 
+  background-color: #FFDBF2; 
   padding: 20px 0; 
   margin-bottom:13vh;
   align-items:center;
 }
 
-header h1 {
+header h2 {
   font-size: 36px; 
   margin-bottom: 20px; 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -70,7 +70,7 @@ header p {
 }
 .descricao {
   padding:10px;
-  margin: 30px;
+  margin: 40px;
 }
 
 .link_button {
@@ -81,20 +81,21 @@ header p {
   cursor: pointer;
 }
 
-h1 {
-  color: #f7deec; /* Cor do título em rosa escuro */
-  font-size: 24px; /* Tamanho de fonte maior */
+.txt {
+  color: #ff1493; 
+  font-size: 24px; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .titulo {
-  color: #ff69b4; /* Cor dos subtítulos em rosa médio */
-  font-size: 28px; /* Tamanho de fonte maior */
+  color: #EE03D6; 
+  font-size: 28px; 
 }
 .titulo1 {
-  color: #fa037e; /* Cor dos subtítulos em rosa médio */
-  font-size: 32px; /* Tamanho de fonte maior */
+  color: #EE03D6; 
+  font-size: 32px; 
 }
 p {
   text-indent: 30px;
-  color:#ff73b9;
+  color:#000;
 }

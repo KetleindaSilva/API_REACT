@@ -32,7 +32,7 @@ function Home() {
             <div>
                 <header className="container-fluid">
                     <div className="row text-center text-white">
-                        <h2 className="col">Movie</h2>
+                        <h2 className="col fw-bold">Ketty Filmes</h2>
                         <form onSubmit={handleSearch} className="col me-3">
                             <input
                                 type="text"
@@ -46,16 +46,16 @@ function Home() {
                 </header>
             </div>
 
-            <MovieList>
+            <MovieList className="row">
                 {movies.map((movie) => {
                     return (
-                        <div className="card col " key={movie.id}>
+                        <div className="card col" key={movie.id}>
                             <Movie>
                                 <img
                                     src={`${imagePath}${movie.poster_path}`}
                                     alt={movie.title}
                                 />
-                                <span>{movie.title}</span>
+                                <span className="mb-4">{movie.title}</span>
 
                                 <Link to={`/${movie.id}`}>
                                     <Btn>Detalhes</Btn>

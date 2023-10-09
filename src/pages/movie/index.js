@@ -27,8 +27,8 @@ const Movie = () => {
     return (
         <div>
             <header className="container-fluid">
-                <div className="row text-center text-white">
-                    <h2 className="col">Movie</h2>
+                <div className="row text-center txt">
+                    <h2 className="col fw-bold">Ketty Filmes</h2>
                 </div>
             </header>
             <div className="body container align-self-start">

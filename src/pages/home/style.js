@@ -3,16 +3,17 @@ import styled from "styled-components";
 export const Container = styled.div`
    
     header {
-    background-color: #ffdbf2; 
+    background-color: #FFDBF2; 
     padding: 20px;
   }
   
   header h2 {
-    color: #ff69b4; 
+    color: #ff1493; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   header .form-control {
-    background-color: #ffdbf2;
+    background-color: #FF1493;
     border-color: #ff69b4;
   }
   
@@ -43,7 +44,7 @@ export const MovieList = styled.ul`
     .card{
         background-color: #ffdbf2; 
         border: 1px solid #ff69b4;
-        padding:10px;
+        padding:20px;
         border-radius: 25px;
         transition: transform 0.2s, box-shadow 0.2s; 
     }
@@ -71,6 +72,8 @@ export const Movie = styled.li`
         font-weight: bold;
         font-size: 100%;
         text-align: center;
+        height:5vh;
+        
     }
     a {
         transition: all 0.3s;
